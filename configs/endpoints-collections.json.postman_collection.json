@@ -1,0 +1,352 @@
+{
+	"info": {
+		"_postman_id": "82515226-1522-4851-aca9-fa39fe519499",
+		"name": "endpoints-collections.json",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37660302"
+	},
+	"item": [
+		{
+			"name": "registerStudent",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Fernando\",\r\n    \"surname\": \"fer11\",\r\n    \"username\": \"fernandoherrera\",\r\n    \"email\": \"fer11vwx@gmail.com\",\r\n  \"phone\": \"12345678\",\r\n  \"password\": \"fdgfgdffffgfdg\",\r\n  \"role\": \"STUDENT_ROLE\",\r\n  \"profilePicture\": \"file\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3001/administracion/v1/auth/registerStudent",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3001",
+					"path": [
+						"administracion",
+						"v1",
+						"auth",
+						"registerStudent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Gabriela\",\r\n    \"surname\": \"gaby00\",\r\n    \"username\": \"gabrielasoto\",\r\n    \"email\": \"gaby00yz@gmail.com\",\r\n  \"phone\": \"12345678\",\r\n  \"password\": \"fdgfgdffffgfdg\",\r\n  \"role\": \"TEACHER_ROLE\",\r\n  \"profilePicture\": \"file\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3001/administracion/v1/auth/registerTeacher",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3001",
+					"path": [
+						"administracion",
+						"v1",
+						"auth",
+						"registerTeacher"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n   \"email\": \"gaby00yz@gmail.com\",\r\n  \"password\": \"fdgfgdffffgfdg\"\r\n\r\n}\r\n  \r\n  ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3001/administracion/v1/auth/loginStudent",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3001",
+					"path": [
+						"administracion",
+						"v1",
+						"auth",
+						"loginStudent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3001/administracion/v1/course/coursesteacher/67a8fd08740583b9f1a20486",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3001",
+					"path": [
+						"administracion",
+						"v1",
+						"course",
+						"coursesteacher",
+						"67a8fd08740583b9f1a20486"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3001/administracion/v1/assignment/assignmentCourse/67a980a8739784d7531ee555",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3001",
+					"path": [
+						"administracion",
+						"v1",
+						"assignment",
+						"assignmentCourse",
+						"67a980a8739784d7531ee555"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3001/administracion/v1/course/deleteCourse/67a985c6970c2508496b867d",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3001",
+					"path": [
+						"administracion",
+						"v1",
+						"course",
+						"deleteCourse",
+						"67a985c6970c2508496b867d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"courseId\": \"67a985c6970c2508496b867d\",\r\n    \"studentId\": \"67a980a8739784d7531ee555\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3001/administracion/v1/assignment/saveCourseStudent",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3001",
+					"path": [
+						"administracion",
+						"v1",
+						"assignment",
+						"saveCourseStudent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"category\": \"Business\",\r\n    \"information\": \"Beremos las formas de comunicarse\",\r\n    \"email\": \"gaby00yz@gmail.com\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3001/administracion/v1/course/saveCourse",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3001",
+					"path": [
+						"administracion",
+						"v1",
+						"course",
+						"saveCourse"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"category\": \"Others\",\r\n    \"information\": \"Puedes elegir tu\",\r\n    \"email\": \"sofia88@gmail.com\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3001/administracion/v1/course/updateCourse/67a93c900808e56efb02c9ef",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3001",
+					"path": [
+						"administracion",
+						"v1",
+						"course",
+						"updateCourse",
+						"67a93c900808e56efb02c9ef"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3001/administracion/v1/userStudent/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3001",
+					"path": [
+						"administracion",
+						"v1",
+						"userStudent",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n   \"email\": \"gaby00yz@gmail.com\",\r\n  \"password\": \"fdgfgdffffgfdg\"\r\n\r\n}\r\n  ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3001/administracion/v1/auth/loginStudent",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3001",
+					"path": [
+						"administracion",
+						"v1",
+						"auth",
+						"loginStudent"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
